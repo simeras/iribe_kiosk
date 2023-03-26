@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img {
+    background-image: url('../images/iribefront.jpg');
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-position: 39% 50%;
+}
+
+.main-top {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.main-heading {
+    font-family: 'Roboto';
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.main-nav {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.main-nav-btn {
+    height: 3em;
+    width: 800px;
+    margin: 16px 16px 16px 0;
+    font-family: 'Roboto';
+    font-size: 28px;
+    color: #000000;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #E21833;
+    color:#ffffff;
+}
+
+.nav-divider {
+    width: 1px;
+    background-color: #ffffff;
+    height: 52px;
+    padding-right: 1px
+}
+
+.nav-tab {
+    width: 100%;
+    height: 2.5em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 1em;
+}
+
+.nav-tab:hover {
+    background-color: #b91329;
+    text-decoration: underline;
+}
+
+.nav-selected {
+    background-color: #b91329;
+    text-decoration: underline;
+}
+
+.heading {
+    font-family: 'Roboto';
+    font-size: 48px;
+}
+
+.main-text {
+    font-family: 'Roboto';
+}
+
+.reg-text {
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    color: #434A4F; 
+}
+
+.btn:hover {
+    background-color: #b91329;
+}
+
+.btn {
+    border: none;
+    color: #ffffff;
+    background-color: #E21833;
+}
+
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+i {
+    margin: 4px;
+}
