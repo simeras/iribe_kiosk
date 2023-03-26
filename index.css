@@ -21,7 +21,16 @@
     text-align: center;
     letter-spacing: 4px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
+}
+
+.sub-heading {
+    font-family: 'Roboto';
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #000000;
 }
 
 .main-nav {
