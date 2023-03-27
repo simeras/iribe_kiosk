@@ -22,3 +22,24 @@ function createRoomItem(room) {
 const roomslist = document.querySelector('#rooms-list')
 const items = rooms.map((room) => createRoomItem(room))
 roomslist.insertAdjacentHTML('beforeend', items.join(''))
+
+const inputHandler = function (e) {
+  while (roomslist.hasChildNodes()) {
+    roomslist.removeChild(roomslist.lastChild)
+  }
+
+  const input = e.target.value.toUpperCase()
+
+  if (input === '') {
+    const items = rooms.map((room) => createRoomItem(room))
+    roomslist.insertAdjacentHTML('beforeend', items.join(''))
+  } else {
+    const data = rooms.filter((room) => room.startsWith(input) || ('IRB' + room).startsWith(input))
+    console.log(data)
+    const filteredItems = data.map((room) => createRoomItem(room))
+    roomslist.insertAdjacentHTML('beforeend', filteredItems.join(''))
+  }
+}
+
+const search = document.querySelector('#search')
+search.addEventListener('input', inputHandler)
