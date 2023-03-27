@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../css/classroom.css">
+    <link rel="stylesheet" href="../css/reserve.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <!-- Awesome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Map</title>
+    <title>Reservation</title>
 </head>
 <body>
     <header class="nav-header main-text">
@@ -53,25 +53,41 @@
         </a>
     </header>
     <main>
-        <div id="search-banner">
-            <div>
-                <i class="fa fa-2x fa-search" id="search-icon"></i>
-                <input type="text" id="search" placeholder="Search for a room" maxlength="7"> 
-            </div>
-        </div>
-        <div id="reservation-banner">
-            <a href="./reserve.html" id="reservation-link">
-                <button id="reservation">Reserve a Room</button>
+        <div id="banner">
+            <a id="back" href="./classrooms.html">
+                <i class="fa fa-chevron-left"></i>
             </a>
+            <h1 id="banner-header">Room Reservation</h1>
         </div>
-        <div id="kb-area">
+        <hr>
+        <form id="form">
+            <div id="rooms-section">
+                <label for="rooms" id="rooms-label">Room:</label>
+                <select name="rooms" id="rooms-select">
+                    <option value="1119">IRB1119</option>
+                    <option value="2113">IRB2113</option>
+                    <option value="3115">IRB3115</option>
+                    <option value="5117">IRB5117</option>
+                </select>
+            </div>
+            <div id="time-section">
+                <label for="time" id="time-label">Time:</label>
+                <select name="time" id="time-select"></select>
+            </div>
+            <div id="email-section">
+                <label for="email" id="email-label">UMD Email:</label>
+                <input name="email" type="email" id="email-input">
+            </div>
+        </form>
+        <div id="keyboard-area">
 
         </div>
-        <div class="container">
-            <ul id="rooms-list">
-            </ul>
+        <div id="submit-section">
+            <a href="./classrooms.html">
+                <button id="submit">Reserve Room</button>
+            </a>
         </div>
     </main>
-    <script src="../scripts/classroom.js"></script>
+    <script src="../scripts/reserve.js"></script>
 </body>
 </html>

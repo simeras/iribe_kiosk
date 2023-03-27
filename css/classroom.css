@@ -57,11 +57,23 @@ li {
 }
 
 #reservation {
+    color: #ffffff;
+    background-color: #e21833;
     font-family: 'Roboto';
     font-size: 28px;
     letter-spacing: 1px;
-    background-color: #e21833;
     margin-top: 8px;
     padding: 8px;
     border-radius: 8px;
+    border: none;
+}
+
+#reservation:hover {
+    background-color: #b91329;
+}
+
+#kb {
+    width: 1024px;
+    position: fixed;
+    bottom: 0;
 }

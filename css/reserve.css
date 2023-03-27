@@ -1,0 +1,72 @@
+#banner {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+#back {
+    color: black;
+    font-size: 32px;
+}
+
+#banner-header {
+    font-family: 'Roboto';
+    margin-left: 16px;
+}
+
+#rooms-section {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 16px;
+    font-size: 36px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+#time-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#email-section {
+    display: flex;
+    flex-direction: column;
+}
+
+select, input {
+    font-family: 'Trebuchet MS';
+    font-size: 32px;
+    padding-left: 4px;
+}
+
+#form {
+    padding: 16px;
+}
+
+#submit-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+#submit {
+    border: none;
+    border-radius: 8px;
+    font-size: 28px;
+    font-family: 'Roboto';
+    background-color: #e21833;
+    color: white;
+    padding: 8px;
+}
+
+#submit:hover {
+    background-color: #b91329;
+}
+
+#kb {
+    width: 1024px;
+    position: absolute;
+}

@@ -43,3 +43,14 @@ const inputHandler = function (e) {
 
 const search = document.querySelector('#search')
 search.addEventListener('input', inputHandler)
+
+const kb = document.getElementById('kb-area')
+search.addEventListener('focus', () => {
+  kb.insertAdjacentHTML('beforeend', '<img id="kb" src="../images/keyboard.png"></img>')
+})
+
+search.addEventListener('blur', () => {
+  while (kb.hasChildNodes()) {
+    kb.removeChild(kb.lastChild)
+  }
+})
