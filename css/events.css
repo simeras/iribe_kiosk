@@ -1,0 +1,51 @@
+.events-header {
+    font-family: 'Roboto';
+    padding: 16px;
+}
+
+hr {
+    margin: 0 auto;
+}
+
+.events-list {
+    overflow: auto;
+    height: 626px;
+}
+
+li {
+    font-size: 64px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    padding-bottom: 16px;
+}
+
+.item-main {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Trebuchet MS';
+}
+
+.item-left {
+    padding: 0 12px;
+    font-size: 32px;
+    width: 6em;
+}
+
+.item-right {
+    margin-left: 8px;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.item-bottom {
+    padding: 8px 16px 8px 32px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS';
+    color: #434A4F;
+}
+
+i {
+    margin-right: 8px;
+}
+
