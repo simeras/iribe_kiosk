@@ -62,6 +62,7 @@ function createEventItem(event) {
         <p class="item-name">` +
     event.name +
     `</p>
+    <p class="details">Learn More</p>
     </div>
     </summary>
     <div class="item-bottom">

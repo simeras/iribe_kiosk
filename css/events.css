@@ -38,6 +38,12 @@ li {
     letter-spacing: 2px;
 }
 
+.details {
+    font-size: 20px;
+    color: #e21833;
+    letter-spacing: 1px;
+}
+
 .item-bottom {
     padding: 8px 16px 8px 32px;
     font-size: 24px;
@@ -45,7 +51,4 @@ li {
     color: #434A4F;
 }
 
-i {
-    margin-right: 8px;
-}
 

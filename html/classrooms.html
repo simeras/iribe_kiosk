@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/classroom.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,6 +52,23 @@
             <span>ABOUT</span>
         </a>
     </header>
-    <div></div>
+    <main>
+        <div id="search-banner">
+            <div>
+                <i class="fa fa-2x fa-search" id="search-icon"></i>
+                <input type="text" id="search" placeholder="Search for a room" maxlength="7"> 
+            </div>
+        </div>
+        <div id="reservation-banner">
+            <a href="" id="reservation">
+                <span>Reserve a Room</span>
+            </a>
+        </div>
+        <div class="container">
+            <ul id="rooms-list">
+            </ul>
+        </div>
+    </main>
+    <script src="../scripts/classroom.js"></script>
 </body>
 </html>

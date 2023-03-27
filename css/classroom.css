@@ -1,0 +1,67 @@
+#search-banner {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+#reservation-banner {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+}
+
+#search {
+    padding: 4px;
+    font-size: 24px;
+    height: 1.8em;
+    text-align: center;
+    width: 1000px;
+}
+
+#search-icon {
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+#rooms-list {
+    overflow: auto;
+    height: 553px;
+}
+
+li {
+    font-size: 48px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    padding: 16px 12px;
+    font-family: 'Trebuchet MS';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: row;
+    padding-top: 12px;
+    font-size: 28px;
+    color: #e21833;
+}
+
+#reservation {
+    font-family: 'Roboto';
+    font-size: 28px;
+    letter-spacing: 1px;
+    background-color: #e21833;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
