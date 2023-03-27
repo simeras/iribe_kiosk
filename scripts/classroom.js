@@ -19,6 +19,7 @@ function createRoomItem(room) {
   )
 }
 
+// Search bar
 const roomslist = document.querySelector('#rooms-list')
 const items = rooms.map((room) => createRoomItem(room))
 roomslist.insertAdjacentHTML('beforeend', items.join(''))
@@ -44,6 +45,7 @@ const inputHandler = function (e) {
 const search = document.querySelector('#search')
 search.addEventListener('input', inputHandler)
 
+// Keyboard popup
 const kb = document.getElementById('kb-area')
 search.addEventListener('focus', () => {
   kb.insertAdjacentHTML('beforeend', '<img id="kb" src="../images/keyboard.png"></img>')

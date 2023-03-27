@@ -1,5 +1,6 @@
 const times = []
 
+// Get the next 5 hours ranges
 for (let i = 0; i < 5; i++) {
   const today = new Date()
   today.setHours(today.getHours() + i + 1)
@@ -10,10 +11,12 @@ for (let i = 0; i < 5; i++) {
   times.push(startString + ' - ' + endString)
 }
 
+// Fill select wth hour ranges
 const timeselect = document.getElementById('time-select')
 const options = times.map((time) => `<option>` + time + `</option>`)
 timeselect.insertAdjacentHTML('beforeend', options.join(''))
 
+// Keyboard popup
 const kb = document.getElementById('keyboard-area')
 const email = document.getElementById('email-input')
 email.addEventListener('focus', () => {

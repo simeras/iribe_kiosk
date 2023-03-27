@@ -64,6 +64,7 @@ function createEventItem(event) {
   )
 }
 
+// Populate list with events
 const eventslist = document.querySelector('.events-list')
 const items = events.map((item) => createEventItem(item))
 eventslist.insertAdjacentHTML('beforeend', items.join(''))
