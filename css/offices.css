@@ -1,0 +1,97 @@
+#search-banner {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+#search {
+    padding: 4px;
+    font-size: 24px;
+    height: 1.8em;
+    text-align: center;
+    width: 1000px;
+}
+
+#search-icon {
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+#office-list {
+    overflow: auto;
+    height: 625px;
+}
+
+li {
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    padding: 16px 12px;
+}
+
+.item-main {
+    font-size: 36px;
+    font-family: 'Trebuchet MS';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-room {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    font-size: 28px;
+    color: #e21833;
+}
+
+.item-hours {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.hours-label {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    color: #e21833;
+}
+
+.hours-info {
+    margin-left: 20px;
+    padding-top: 8px;
+}
+
+.role-label, .classes-label {
+    font-family: 'Trebuchet MS';
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.table-hours {
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+}
+
+#kb {
+    width: 1024px;
+    position: fixed;
+    bottom: 0;
+}

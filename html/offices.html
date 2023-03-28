@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/offices.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
     <!-- Awesome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Map</title>
+    <title>Offices</title>
 </head>
 <body>
     <header class="nav-header main-text">
@@ -51,6 +52,20 @@
             <span>ABOUT</span>
         </a>
     </header>
-    <div></div>
+    <main>
+        <div id="search-banner">
+            <div>
+                <i class="fa fa-2x fa-search" id="search-icon"></i>
+                <input type="text" id="search" placeholder="Search for a professor or TA" maxlength="32"> 
+            </div>
+        </div>
+        <hr>
+        <div id="kb-area"></div>
+        <div class="container">
+            <ul id="office-list">
+            </ul>
+        </div>
+    </main>
+    <script src="../scripts/offices.js"></script>
 </body>
 </html>
