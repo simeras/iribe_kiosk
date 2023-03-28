@@ -108,9 +108,7 @@ const inputHandler = function (e) {
     const items = offices.map((office) => createOfficeItem(office))
     officeList.insertAdjacentHTML('beforeend', items.join(''))
   } else {
-    const data = offices.filter(
-      (office) => office.name.startsWith(input) || ('IRB' + office.room).startsWith(input)
-    )
+    const data = offices.filter((office) => office.name.toUpperCase().startsWith(input))
     const filteredItems = data.map((office) => createOfficeItem(office))
     officeList.insertAdjacentHTML('beforeend', filteredItems.join(''))
   }
