@@ -1,15 +1,73 @@
 .events-header {
     font-family: 'Roboto';
+    font-size: 36px;
     padding: 16px;
+    margin-top: 8px;
+    width: 300px;
+    font-weight: bold;
 }
 
 hr {
     margin: 0 auto;
 }
 
+#search-banner {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+#search {
+    padding: 4px;
+    font-size: 24px;
+    height: 1.8em;
+    text-align: center;
+    width: 1000px;
+}
+
+#search-icon {
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+.filterTitle {
+    font-family: 'Roboto';
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+#topicFilter {
+    font-family: 'Roboto';
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #e21833;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+
+#timeFilter {
+    font-family: 'Roboto';
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #e21833;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+
 .events-list {
     overflow: auto;
-    height: 626px;
+    height: 570px;
 }
 
 li {
@@ -51,4 +109,8 @@ li {
     color: #434A4F;
 }
 
-
+#kb {
+    width: 1024px;
+    position: fixed;
+    bottom: 0;
+}

@@ -64,7 +64,37 @@ function createEventItem(event) {
   )
 }
 
-// Populate list with events
 const eventslist = document.querySelector('.events-list')
 const items = events.map((item) => createEventItem(item))
 eventslist.insertAdjacentHTML('beforeend', items.join(''))
+
+const inputHandler = function (e) {
+  while (eventslist.hasChildNodes()) {
+    eventslist.removeChild(eventslist.lastChild)
+  }
+
+  const input = e.target.value.toUpperCase()
+
+  if (input === '') {
+    const items = events.map((item) => createEventItem(item))
+    eventslist.insertAdjacentHTML('beforeend', items.join(''))
+  } else {
+    const data = events.filter((item) => item.name.toUpperCase().startsWith(input))
+    const filteredItems = data.map((item) => createEventItem(item))
+    eventslist.insertAdjacentHTML('beforeend', filteredItems.join(''))
+  }
+}
+
+const search = document.querySelector('#search')
+search.addEventListener('input', inputHandler)
+
+const kb = document.getElementById('kb-area')
+search.addEventListener('focus', () => {
+  kb.insertAdjacentHTML('beforeend', '<img id="kb" src="../images/keyboard.png"></img>')
+})
+
+search.addEventListener('blur', () => {
+  while (kb.hasChildNodes()) {
+    kb.removeChild(kb.lastChild)
+  }
+})

@@ -53,8 +53,31 @@
         </a>
     </header>
     <main>
-       <h1 class="events-header">Upcoming Events</h1> 
-       <hr>
+        <div id="search-banner">
+            <div>
+                <i class="fa fa-2x fa-search" id="search-icon"></i>
+                <input type="text" id="search" placeholder="Search for an event" maxlength="7"> 
+            </div>
+        </div>
+       <span class="events-header">Upcoming Events</span> 
+       <span id="filters">
+            <span class="filterTitle">Filter By Topic: 
+                <select id="topicFilter" name="cars">
+                    <option value="none">None</option>
+                    <option value="networking">Networking</option>
+                    <option value="workshops">Workshops</option>
+                    <option value="undergrad">Undergrad</option>
+                    <option value="talks">Talks</option>
+                  </select>
+            </span>
+            <span class="filterTitle">Filter By Time:
+                <input type="time" id="timeFilter">
+            </span>
+       </span>
+       <hr style="margin-top: 10px;">
+       <div id="kb-area">
+
+         </div>
        <div class="container">
             <ul class="events-list">
             </ul>
