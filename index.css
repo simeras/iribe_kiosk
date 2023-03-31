@@ -3,54 +3,6 @@
     padding: 0;
 }
 
-.bg-img {
-    background-image: url('../images/iribefront.jpg');
-    background-color: rgba(0,0,0,0.3);
-    background-blend-mode: multiply;
-    background-position: 39% 50%;
-}
-
-.main-top {
-    padding-top: 2em;
-    padding-bottom: 1em;
-}
-
-.main-heading {
-    font-family: 'Roboto';
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: 4px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.sub-heading {
-    font-family: 'Roboto';
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 4px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.main-nav {
-    padding-top: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-}
-
-.main-nav-btn {
-    height: 3em;
-    width: 800px;
-    margin: 16px 16px 16px 0;
-    font-family: 'Roboto';
-    font-size: 48px;
-    color: #000000;
-}
-
 .nav-header {
     display: flex;
     flex-direction: row;
