@@ -36,8 +36,7 @@ const events = [
 function createEventItem(event) {
   return (
     `<li>
-    <details>
-    <summary class="item-main">
+    <div class="item-main">
     <div class="item-left">
         <p class="item-date"><i class="fa fa-calendar"></i>` +
     event.date +
@@ -46,19 +45,21 @@ function createEventItem(event) {
     event.location +
     `</p>
     </div>
-    <div class="vr"></div>
     <div class="item-right">
         <p class="item-name">` +
     event.name +
     `</p>
-    <p class="details">Learn More</p>
     </div>
-    </summary>
-    <div class="item-bottom">
-        <p class="item-desc">` +
+    </div>
+    <details class="learn">
+      <summary class="learn-label">
+        Learn More
+      </summary>
+      <div class="item-bottom">
+        <p>` +
     event.description +
     `</p>
-    </div>
+      </div>
     </details>
   </li>`
   )

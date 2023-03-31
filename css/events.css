@@ -96,14 +96,20 @@ li {
     letter-spacing: 2px;
 }
 
-.details {
+.learn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 228px;
+}
+
+.learn-label {
+    font-family: 'Trebuchet MS';
     font-size: 20px;
     color: #e21833;
-    letter-spacing: 1px;
 }
 
 .item-bottom {
-    padding: 8px 16px 8px 32px;
+    padding-top: 4px;
     font-size: 24px;
     font-family: 'Trebuchet MS';
     color: #434A4F;
