@@ -47,7 +47,7 @@
     width: 800px;
     margin: 16px 16px 16px 0;
     font-family: 'Roboto';
-    font-size: 28px;
+    font-size: 48px;
     color: #000000;
 }
 
@@ -57,7 +57,7 @@
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     background-color: #E21833;
     color:#ffffff;
 }
@@ -65,7 +65,7 @@
 .nav-divider {
     width: 1px;
     background-color: #ffffff;
-    height: 52px;
+    height: 68px;
     padding-right: 1px
 }
 
