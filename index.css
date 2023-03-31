@@ -22,20 +22,17 @@
 }
 
 .nav-tab {
+    text-decoration: none;
     width: 100%;
     height: 2.5em;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
     padding-top: 1em;
+    color:#ffffff;
 }
 
-.nav-tab:hover {
-    background-color: #b91329;
-    text-decoration: underline;
-}
-
-.nav-selected {
+.nav-tab:hover, .nav-selected {
     background-color: #b91329;
     text-decoration: underline;
 }
@@ -63,11 +60,6 @@
     border: none;
     color: #ffffff;
     background-color: #E21833;
-}
-
-a:link, a:visited, a:hover, a:active { 
-    text-decoration: none;
-    color: #ffffff;
 }
 
 i {
